@@ -16,6 +16,14 @@ Install the required dependencies:
 pip install -r requirements.txt
 ```
 
+## Download KITTI
+To download and format the KITTI dataset run:
+
+```bash
+  $cd data
+  $source data_prep.sh
+```
+
 ## Training and Testing
 
 To train the model, run `train_CrossVIO.py` with appropriate arguments. An example provided:
@@ -45,7 +53,7 @@ python train_CrossVIO.py \
                         --print_frequency 20
 ```
 
-To test the model, run `test_CrossVIO.py` with appropriate arguments. An example provided:
+To test the model, run `test_CrossVIO.py` with appropriate arguments. [Pretrained weights](https://drive.google.com/file/d/1K9si144jhC9fmmEIxuJQ-p3EkGs4h6r9/view?usp=drive_link) finetuned on KITTI are provided, remember to edit the path for the --pretrain argument.
 
 ```bash
 python test_CrossVIO.py \
@@ -65,3 +73,9 @@ python test_CrossVIO.py \
                         --lr_fine 1e-6 \
                         --experiment_name 'BEST'
 ```
+
+## Acknowledgements
+
+To the authors of ["Efficient Deep Visual and Inertial Odometry with Adaptive Visual Modality Selection"](https://arxiv.org/pdf/2205.06187.pdf) for their work and publishing their code to the public.
+
+

@@ -1,0 +1,24 @@
+python train_local.py ^
+--model_type DeepCrossVIO ^
+--data_dir ./ADVIO/ ^
+--save_dir ./training_results ^
+--pretrain_flownet ./pretrain_models/flownets_bn_EPE2.459.pth.tar ^
+--cross_fusion ^
+--train_seq 01 02 03 04 05 06 07 09 10 11 13 14 16 17 18 19 21 22 23 ^
+--val_seq 20 15 12 08 ^
+--rnn_hidden_size 512 ^
+--i_f_len 512 ^
+--skip_frames 1 ^
+--num_head 2 ^
+--batch_size 9 ^
+--seq_len 11 ^
+--optimizer RAdam ^
+--num_layers 8 ^
+--epochs_warmup 20 ^
+--epochs_joint 10 ^
+--epochs_fine 20 ^
+--lr_warmup 5e-4 ^
+--lr_joint 5e-5 ^
+--lr_fine 1e-6 ^
+--experiment_name DeepCrossVIO-test ^
+--print_frequency 50 ^

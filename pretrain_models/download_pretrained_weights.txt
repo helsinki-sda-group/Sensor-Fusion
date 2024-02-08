@@ -1,0 +1,5 @@
+Download and place the pretrained weights in the /pretrain_models folder.
+
+
+GMFLOW/UNIMATCH - https://s3.eu-central-1.amazonaws.com/avg-projects/unimatch/pretrained/gmflow-scale2-regrefine6-mixdata-train320x576-4e7b215d.pth
+FlowNet & Visual-Selective-VIO (ECCV 2022) models (4 total) - https://drive.google.com/drive/folders/1KrxpvUV9Bn5SwUlrDKe76T2dqF1ooZyk

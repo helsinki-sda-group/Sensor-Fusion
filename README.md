@@ -1,5 +1,7 @@
 # Sensor-Fusion
 
+![Status](https://img.shields.io/badge/Status-Completed-green)
+
 This repository contains the code for the implementation of a novel cross-attention-based pedestrian visual-inertial odometry model as described in the paper titled ["A Novel Cross-Attention-Based Pedestrian Visual–Inertial Odometry With Analyses Demonstrating Challenges in Dense Optical Flow"](https://ieeexplore.ieee.org/abstract/document/10363184).
 
 ## Installation
